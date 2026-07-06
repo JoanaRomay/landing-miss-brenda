@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Miss Brenda - Clases de inglés para adultos</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container container">
+            <div class="logo">Miss Brenda</div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-cb"/>
+            <div class="nav-menu">
+                <a class="nav-link" href="#about" onclick="document.getElementById('menu-toggle').checked = false">Sobre mí</a>
+                <a class="nav-link" href="#levels" onclick="document.getElementById('menu-toggle').checked = false">Niveles</a>
+                <a class="nav-link" href="#faq" onclick="document.getElementById('menu-toggle').checked = false">Preguntas frecuentes</a>
+                <a class="nav-link" href="#contact" onclick="document.getElementById('menu-toggle').checked = false">Contacto</a>
+                <a class="btn btn-sm btn-primary bouncy-hover" href="mailto:missbrenda@ejemplo.com?subject=Quiero%20sumarme%20a%20las%20clases%20de%20ingl%C3%A9s" onclick="document.getElementById('menu-toggle').checked = false">Quiero sumarme</a>
+            </div>
+            <label for="menu-toggle" class="menu-btn">
+                <span class="material-symbols-outlined menu-icon">menu</span>
+                <span class="material-symbols-outlined close-icon">close</span>
+            </label>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section relative overflow-hidden">
+            <div class="container hero-grid">
+                <div class="hero-content-column fade-in-up">
+                    <span class="hero-badge">
+                        ¡Aprendé, reí y hablá inglés! ✨
+                    </span>
+                    <h1 class="hero-title">
+                        Miss Brenda
+                    </h1>
+                    <p class="hero-desc">
+                        Clases de inglés para adultos donde aprender es divertido, sin presiones y a tu ritmo.
+                    </p>
+                    <div class="hero-btn-group">
+                        <a class="btn btn-md btn-primary bouncy-hover btn-primary-shadow" href="mailto:missbrenda@ejemplo.com?subject=Quiero%20sumarme%20a%20las%20clases%20de%20ingl%C3%A9s" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                            <span class="material-symbols-outlined" style="font-size: 20px; font-variation-settings: 'FILL' 1;">favorite</span> Quiero sumarme
+                        </a>
+                        <a class="btn btn-md btn-secondary bouncy-hover" href="#levels" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                            <span class="material-symbols-outlined" style="font-size: 20px;">menu_book</span> Conocé los niveles
+                        </a>
+                    </div>
+                    <div class="hero-checklist">
+                        <div class="hero-check-item">
+                            <span class="material-symbols-outlined hero-check-icon" style="font-variation-settings: 'FILL' 1;">videocam</span>
+                            <span>Online por Zoom</span>
+                        </div>
+                        <div class="hero-check-item">
+                            <span class="material-symbols-outlined hero-check-icon" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+                            <span>2 clases por semana</span>
+                        </div>
+                        <div class="hero-check-item">
+                            <span class="material-symbols-outlined hero-check-icon" style="font-variation-settings: 'FILL' 1;">groups</span>
+                            <span>Grupos reducidos</span>
+                        </div>
+                        <div class="hero-check-item">
+                            <span class="material-symbols-outlined hero-check-icon" style="font-variation-settings: 'FILL' 1;">bar_chart</span>
+                            <span>4 niveles</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-column fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="hero-img-inner">
+                        <div class="organic-mask-bg organic-mask"></div>
+                        <img alt="Miss Brenda, a friendly English teacher smiling in her bright, warm home office." class="hero-img organic-mask cloud-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXglG3AqwWxD4JAxKDngfym1mUdu439Cocrp8n9ZBKLlX6PZQTLtfzLyx1XZV2y7Zl8Oj6KU2eAxY89Ojsj7Fc0Wks3AYgIXl8RWQ5oA5kXcIcPHIugzqUXGGiPvohQJ0DxB9UvkuawBGAzvHXB3yDmSjIaWsr4pcp1cjqP5R36yfQCAn7Ss1ttHfoE14PfYCsA6gd-ihtRJ152u1C4YqYTu_whtCoQYUYxf_eBJmX3EesqKxal8oyXQ"/>
+                        
+                        <!-- Elementos decorativos flotantes alrededor de la foto -->
+                        <div class="hero-deco-star floating-star" style="color: var(--color-tertiary);">
+                            <span class="material-symbols-outlined" style="font-size: 48px;">grade</span>
+                        </div>
+                        <div class="hero-deco-heart floating-star" style="animation-delay: 1s; color: var(--color-secondary);">
+                            <span class="material-symbols-outlined" style="font-size: 64px;">favorite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section overflow-hidden" id="about">
+            <div class="container about-grid">
+                <div class="about-img-container">
+                    <img alt="Miss Brenda laughing spontaneously while holding a cup of coffee in a cozy home setting." class="about-img cloud-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYBH8TezSE-EXMdvup3GSADc1sb_RGoVlbUrL_nSDVVJfDm9Aynk2xJmS4YdZq5yAHTOWCRwwqKz-5v52mBpxA5MLXaoyrPOX8XH4zgsrqS1VRF3lViI5knGfyf99j0K7cnJ8_d98Ntz_r8Y2qc9_tHRx9vo8ObByHI_Kelg2RvWMOyh_NvRfEO48m7PvEZ8Ki_1qb1AuX06FOYZY9qlhcr3mMPE8AQOAsvfvcn7hVm-F1THfF5DCNsQ"/>
+                    <div class="quote-sticker">
+                        <p class="quote-text">"Aprender un idioma no tiene por qué ser aburrido..."</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="about-title">Sobre mí</h2>
+                    <div class="about-text">
+                        <p>
+                            ¡Hola! Soy Brenda. Después de años enseñando inglés, descubrí que la barrera más grande para los adultos no es la gramática, sino el miedo a equivocarse.
+                        </p>
+                        <p>
+                            Mi enfoque está diseñado para bajar ese filtro afectivo. Creamos un espacio seguro donde el error es parte del proceso y la risa es nuestra mejor herramienta de aprendizaje.
+                        </p>
+                        <p>
+                            Aquí no solo aprendés a hablar inglés, aprendés a ganar confianza para conectarte con el mundo.
+                        </p>
+                    </div>
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Años de experiencia</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Alumnos felices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="section-header container">
+                <h2 class="section-title">¿Por qué es diferente?</h2>
+                <p class="section-desc">Diseñamos una experiencia de aprendizaje que se adapta a tu vida adulta.</p>
+            </div>
+            <div class="container features-grid">
+                <div class="feature-card bg-tertiary bouncy-hover cloud-shadow">
+                    <div class="feature-icon-wrapper">
+                        <span class="material-symbols-outlined" style="font-size: 30px;">psychology</span>
+                    </div>
+                    <h3 class="feature-title">Actividades dinámicas</h3>
+                    <p class="feature-desc">Olvidate de los libros aburridos. Usamos juegos, videos y situaciones reales.</p>
+                </div>
+                <div class="feature-card bg-white-border bouncy-hover cloud-shadow">
+                    <div class="feature-icon-wrapper">
+                        <span class="material-symbols-outlined" style="font-size: 30px;">forum</span>
+                    </div>
+                    <h3 class="feature-title">Mucha conversación</h3>
+                    <p class="feature-desc">Hablamos desde el primer día. El objetivo es que logres comunicarte con fluidez.</p>
+                </div>
+                <div class="feature-card bg-tertiary bouncy-hover cloud-shadow">
+                    <div class="feature-icon-wrapper">
+                        <span class="material-symbols-outlined" style="font-size: 30px;">mood</span>
+                    </div>
+                    <h3 class="feature-title">Aprender sin miedo</h3>
+                    <p class="feature-desc">Creamos un entorno relajado donde equivocarse es parte de la diversión.</p>
+                </div>
+                <div class="feature-card bg-white-border bouncy-hover cloud-shadow">
+                    <div class="feature-icon-wrapper">
+                        <span class="material-symbols-outlined" style="font-size: 30px;">verified</span>
+                    </div>
+                    <h3 class="feature-title">Feedback cálido</h3>
+                    <p class="feature-desc">Correcciones que construyen, no que juzgan. Siempre con apoyo constante.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section relative overflow-hidden">
+            <div class="container experience-container">
+                <div class="experience-content z-10">
+                    <h2 class="experience-title">La experiencia Miss Brenda</h2>
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <span class="experience-icon">✨</span>
+                            <p class="experience-item-text">Acá no existen las preguntas tontas, todas suman.</p>
+                        </div>
+                        <div class="experience-item">
+                            <span class="experience-icon">☕</span>
+                            <p class="experience-item-text">Traé tu café o tu mate; sentite como en casa mientras aprendés.</p>
+                        </div>
+                        <div class="experience-item">
+                            <span class="experience-icon">🤝</span>
+                            <p class="experience-item-text">Comunidad de adultos que comparten tus mismos desafíos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="deco-grid">
+                    <div class="deco-item deco-item-1 organic-mask">💬</div>
+                    <div class="deco-item deco-item-2">💡</div>
+                    <div class="deco-item deco-item-3">🌟</div>
+                    <div class="deco-item deco-item-4">📚</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Levels Section -->
+        <section class="levels-section" id="levels">
+            <div class="section-header container">
+                <h2 class="section-title">Nuestros Niveles</h2>
+                <p class="section-desc">Hay un lugar perfecto para vos, sin importar dónde empieces.</p>
+            </div>
+            <div class="container levels-grid">
+                <div class="level-card border-tertiary bouncy-hover cloud-shadow">
+                    <span class="level-emoji">🌱</span>
+                    <h3 class="level-title">Starter</h3>
+                    <p class="level-desc">Para quienes empiezan desde cero absoluto o casi no recuerdan nada.</p>
+                    <ul class="level-list">
+                        <li class="level-item"><span class="material-symbols-outlined level-check-icon">check_circle</span> Saludos y base</li>
+                        <li class="level-item"><span class="material-symbols-outlined level-check-icon">check_circle</span> Vocabulario diario</li>
+                    </ul>
+                </div>
+                <div class="level-card border-secondary bouncy-hover cloud-shadow">
+                    <span class="level-emoji">🌿</span>
+                    <h3 class="level-title">Explorer</h3>
+                    <p class="level-desc">Ya conocés lo básico pero necesitás soltarte más al hablar.</p>
+                    <ul class="level-list">
+                        <li class="level-item"><span class="material-symbols-outlined level-check-icon">check_circle</span> Conversación fluida</li>
+                        <li class="level-item"><span class="material-symbols-outlined level-check-icon">check_circle</span> Tiempos verbales</li>
+                    </ul>
+                </div>
+                <div class="level-card border-tertiary bouncy-hover cloud-shadow">
+                    <span class="level-emoji">🌳</span>
+                    <h3 class="level-title">Communicator</h3>
+                    <p class="level-desc">Podés manejarte en situaciones comunes, buscamos precisión.</p>
+                    <ul class="level-list">
+                        <li class="level-item"><span class="material-symbols-outlined level-check-icon">check_circle</span> Debates y opiniones</li>
+                        <li class="level-item"><span class="material-symbols-outlined level-check-icon">check_circle</span> Inglés profesional</li>
+                    </ul>
+                </div>
+                <div class="level-card border-secondary bouncy-hover cloud-shadow">
+                    <span class="level-emoji">⭐</span>
+                    <h3 class="level-title">Fluent Path</h3>
+                    <p class="level-desc">Perfeccionamiento total para quienes quieren sonar naturales.</p>
+                    <ul class="level-list">
+                        <li class="level-item"><span class="material-symbols-outlined level-check-icon">check_circle</span> Modismos y slangs</li>
+                        <li class="level-item"><span class="material-symbols-outlined level-check-icon">check_circle</span> Confianza absoluta</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="faq-container">
+                <h2 class="faq-title">Preguntas Frecuentes</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>
+                            ¿Necesito conocimientos previos?
+                            <span class="material-symbols-outlined faq-arrow">expand_more</span>
+                        </summary>
+                        <p class="faq-answer">
+                            ¡Para nada! Tenemos el nivel "Starter" pensado específicamente para quienes están dando sus primeros pasos o quieren resetear lo poco que aprendieron en el pasado.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>
+                            ¿Cómo son los horarios?
+                            <span class="material-symbols-outlined faq-arrow">expand_more</span>
+                        </summary>
+                        <p class="faq-answer">
+                            Tenemos bandas horarias flexibles pensadas para adultos que trabajan. Generalmente son dos encuentros semanales de 60-90 minutos cada uno.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>
+                            ¿Las clases quedan grabadas?
+                            <span class="material-symbols-outlined faq-arrow">expand_more</span>
+                        </summary>
+                        <p class="faq-answer">
+                            ¡Sí! Si un día no podés conectarte, podés ver la clase después para no perder el hilo, aunque siempre recomendamos la asistencia en vivo para practicar conversación.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>
+                            ¿Qué materiales necesito?
+                            <span class="material-symbols-outlined faq-arrow">expand_more</span>
+                        </summary>
+                        <p class="faq-answer">
+                            Solo una computadora o tablet con Zoom, una buena conexión a internet y muchas ganas de participar. Todo el material didáctico te lo enviamos nosotros en formato digital.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="contact">
+            <div class="container">
+                <div class="cta-card relative overflow-hidden">
+                    <div class="cta-bg-icon">
+                        <span class="material-symbols-outlined">language</span>
+                    </div>
+                    <h2 class="cta-title z-10 relative">🌟 ¿Listo para empezar?</h2>
+                    <p class="cta-desc z-10 relative">
+                        Sumate a nuestra comunidad y empezá a hablar inglés de una forma real, cálida y efectiva. El primer paso es hoy.
+                    </p>
+                    <div class="cta-btn-wrapper z-10 relative">
+                        <a class="btn btn-lg btn-white-primary bouncy-hover" href="mailto:missbrenda@ejemplo.com?subject=Quiero%20inscribirme%20a%20las%20clases%20de%20ingl%C3%A9s">
+                            ¡Quiero inscribirme ahora!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid-layout">
+            <!-- Columna 1: Branding -->
+            <div class="footer-col branding-col">
+                <div class="footer-logo">Miss Brenda</div>
+                <p class="footer-desc-text">
+                    Clases de inglés para adultos diseñadas para aprender sin presiones, con dinámicas divertidas y enfocadas en la conversación.
+                </p>
+            </div>
+
+            <!-- Columna 2: Navegación -->
+            <div class="footer-col links-col">
+                <h4 class="footer-col-title">Navegación</h4>
+                <ul class="footer-links-list">
+                    <li><a class="footer-nav-link" href="#about">Sobre mí</a></li>
+                    <li><a class="footer-nav-link" href="#levels">Niveles</a></li>
+                    <li><a class="footer-nav-link" href="#faq">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Información de contacto -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-col-title">Contacto</h4>
+                <div class="footer-contact-item">
+                    <span class="material-symbols-outlined footer-contact-icon">mail</span>
+                    <a class="footer-contact-link" href="mailto:missbrenda@ejemplo.com?subject=Quiero%20inscribirme%20a%20las%20clases%20de%20ingl%C3%A9s">missbrenda@ejemplo.com</a>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="material-symbols-outlined footer-contact-icon">videocam</span>
+                    <span>Clases online por Zoom</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="material-symbols-outlined footer-contact-icon" style="color: var(--color-primary); font-variation-settings: 'FILL' 1;">favorite</span>
+                    <span>¡Nos vemos en clase! 💕</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra inferior de Copyright -->
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-container">
+                <div class="footer-copy">
+                    © 2024 Joana R. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
