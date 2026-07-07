@@ -2,6 +2,8 @@
 
 Una landing page moderna, responsiva y altamente atractiva diseñada para promocionar las clases de inglés para adultos de **Miss Brenda**. Este proyecto está optimizado para ofrecer una excelente experiencia de usuario con una estética premium, animaciones fluidas y tiempos de carga ultra rápidos.
 
+👉 **Sitio web en vivo:** [missbrenda.netlify.app](https://missbrenda.netlify.app/)
+
 ---
 
 ## 📸 Presentación y Mockup Responsivo
