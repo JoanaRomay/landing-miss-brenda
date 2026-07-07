@@ -38,7 +38,5 @@ Así luce la landing page en diferentes dispositivos:
 Este proyecto fue desarrollado y maquetado con mucho amor y detalle por:
 * **Joana R.** - *Desarrolladora Front-End* (© 2025)
 
-> [!NOTE]
 > **Aclaración:** Esta página de práctica está inspirada en el curso de inglés que realizo actualmente con Miss Brenda.
-> 
-> **P.D.:** Proyecto creado originalmente en 2025. 🚀
+> **PD:** Proyecto creado originalmente en 2025.
